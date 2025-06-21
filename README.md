@@ -39,8 +39,8 @@ flask-crud-app/
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/yourusername/flask-mysql-webapp.git
-cd flask-crud-app
+git clone https://github.com/Sowmyadevi2005/flask-mysql-webapp.git
+cd flask-mysql-webapp
 ```
 
 ### 2. Set Up Virtual Environment (optional but recommended)
