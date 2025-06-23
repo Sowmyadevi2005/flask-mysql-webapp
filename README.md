@@ -1,5 +1,5 @@
 
-# Flask CRUD Web Application
+# Simple Flask Web Application
 
 This is a simple **Flask-based web application** that performs **basic operations (Insert and View)** using a **MySQL** backend database.
 
