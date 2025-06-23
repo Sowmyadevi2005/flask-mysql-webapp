@@ -1,7 +1,11 @@
 
 # Flask CRUD Web Application
 
-This is a simple **Flask-based web application** that performs **CRUD (Create, Read, Update, Delete)** operations using a **MySQL** backend database.
+This is a simple **Flask-based web application** that performs **basic operations (Insert and View)** using a **MySQL** backend database.
+
+> 📝 Note: Before inserting records, you must create the required table by visiting the `/create_table` URL in your browser.
+
+---
 
 ## 🧰 Tech Stack
 
@@ -14,21 +18,22 @@ This is a simple **Flask-based web application** that performs **CRUD (Create, R
 
 ## 🚀 Features
 
-- Add new records (Create)
-- View all records (Read)
-- Update existing entries (Update)
-- Delete records (Delete)
+- Add new records (Insert)
+- View all records (View)
 - Simple web UI built with Jinja templates
+
+> This application does **not support update or delete** operations.
 
 ---
 
 ## 📦 Project Structure
 
 ```
-flask-crud-app/
+flask-mysql-webapp/
 ├── app.py                 # Main Flask app
 ├── templates/             # HTML templates
-│   ├── index.html
+│   └── index.html
+├── config.py              # MySQL configuration
 └── requirements.txt       # Python dependencies
 ```
 
@@ -73,7 +78,19 @@ MYSQL_DB = 'yourdatabase'
 python app.py
 ```
 
-Access it at: `http://localhost:5000`
+Access the app at: `http://localhost:5000`
+
+---
+
+### 🔧 Create the Table
+
+Before adding any records, **navigate to**:
+
+```
+http://localhost:5000/create_table
+```
+
+This will create the required MySQL table automatically.
 
 ---
 
